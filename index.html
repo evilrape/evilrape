@@ -12,19 +12,19 @@
       cursor: crosshair;
       position: relative;
       overflow-x: hidden;
+      overflow-y: auto;
     }
 
 body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background:
-    radial-gradient(ellipse 110% 80% at 50% -120px, rgba(120, 0, 0, 0.15) 0%, transparent 100%);
-  pointer-events: none;
-  z-index: -1;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse 110% 80% at 50% -120px, rgba(120, 0, 0, 0.15) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: -1;
 }
 
     h1 {
