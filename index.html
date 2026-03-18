@@ -4,9 +4,13 @@
   <title>Evil Rape Community</title>
   <style>
     body {
-      font-family: 'Inter', calibri;
+      font-family: 'Inter', calibri, sans-serif;
       text-align: center;
-      margin-top: 100px;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       background-color: #ffffff;
     }
 
@@ -19,12 +23,34 @@
     p {
       color: #555;
       font-size: 1rem;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 400;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      align-self: center;
+      margin-top: -40px;
+    }
+
+    .btn:hover {
+      background-color: #333333;
+      transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
   <h1>Evil Rape Community</h1>
   <p>For Rapists. By Rapists.</p>
-  <p>Rape Test</p>
+
+  <!-- Button -->
+  <button class="btn">Click Me</button>
 </body>
 </html>
