@@ -4,6 +4,9 @@
   <title>Evil Rape Community</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Inter', calibri;
       text-align: center;
@@ -41,7 +44,11 @@ body::before {
       font-size: 1rem;
     }
 
-    .downloadButton {
+    .bigText {
+      font-size: 1.5rem;
+    }
+
+    .buttonTheme {
       background-color: rgba(120, 0, 0, 0.6);
       color: #ffdddd;
       border: 1px solid rgba(180, 0, 0, 0.4);
@@ -57,10 +64,25 @@ body::before {
       transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     }
 
-    .downloadButton:hover {
+    .buttonTheme:hover {
       background-color: rgba(160, 0, 0, 0.7);
       box-shadow: 0 0 30px rgba(220, 0, 0, 0.75);
       transform: translateY(-1px);
+    }
+
+    .imageStack img {
+      display: block;
+      margin: 10px auto;
+      width: 1000px;
+      padding-top: 150px;
+    }
+
+    #imageSection {
+      scroll-margin-top: -100px;
+    }
+
+    .spacer {
+        height: 200px;
     }
   </style>
 </head>
@@ -68,6 +90,19 @@ body::before {
   <h1>Evil Rape Community</h1>
   <p>For Rapists. By Rapists.</p>
   
-  <button class="downloadButton">Enter The Rape Zone</button>
+  <a href="#imageSection">
+    <button class="buttonTheme">Enter The Rape Zone</button>
+  </a>
+
+  <div id="imageSection" class="imageStack">
+            <img src="media/fuckjewsandniggers-preview.png">
+            <p class="bigText">fuck jews and niggers</p>
+            <p>A Rainbow Six Siege recoil controller with presets</p>
+            <a href="files/fuck jews and niggers.zip" download>
+                    <button class="buttonTheme">Download</button>
+            </a>
+            <div class="spacer"></div>
+  </div>
+
 </body>
 </html>
