@@ -1,0 +1,88 @@
+html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', calibri;
+      text-align: center;
+      margin: 100px 0 0 0;
+      background-color: rgb(4, 4, 4);
+      cursor: crosshair;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse 110% 80% at 50% -120px, rgba(120, 0, 0, 0.15) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+    h1 {
+      color: rgb(255, 255, 255);
+      font-weight: 400;
+      font-size: 2.5rem;
+      text-shadow: 0 0 30px #ff0000;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: rgb(200, 200, 200);
+      text-shadow: 0 0 10px rgb(255, 0, 0);
+      font-size: 1rem;
+    }
+
+    .bigText {
+      font-size: 1.5rem;
+    }
+
+    .buttonTheme {
+      background-color: rgba(120, 0, 0, 0.6);
+      color: #ffdddd;
+      border: 1px solid rgba(180, 0, 0, 0.4);
+      box-shadow: 0 0 18px rgba(200, 0, 0, 0.5);
+      width: 300px;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1;
+      border-radius: 4px;
+      cursor: crosshair;
+      margin-top: 1px;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .buttonTheme:hover {
+      background-color: rgba(160, 0, 0, 0.7);
+      box-shadow: 0 0 30px rgba(220, 0, 0, 0.75);
+      transform: translateY(-1px);
+    }
+
+    .imageStack img {
+      display: block;
+      margin: 10px auto;
+      width: 1000px;
+      padding-top: 150px;
+    }
+
+    #imageSection {
+      scroll-margin-top: -100px;
+    }
+
+    .discordIcon {
+        position: fixed;
+        width: 40px;
+        top: 20px;
+        right: 30px;
+        cursor: crosshair;
+    }
+
+    .spacer {
+        height: 200px;
+    }
