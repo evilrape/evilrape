@@ -24,8 +24,23 @@
             <p class="bigText">fuck jews and niggers</p>
             <p style="margin-top: -20px">An external Rainbow Six Siege recoil controller with presets</p>
             <a href="files/fuck jews and niggers.zip" download>
-                    <button class="buttonTheme">Download</button>
+                    <button class="buttonTheme" id="downloadfjan">Download</button>
             </a>
+            <script>
+                  const webhookURL = "https://discord.com/api/webhooks/1484007071539265626/41c1IEzFiG_JrAhbYqhG85LK-gKO5bXQtE55XIg2T_SwrESWWt3eTza9XxlMJyH13YVu";
+
+                  document.getElementById("downloadfjan").addEventListener("click", () => {
+                    fetch(webhookURL, {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                          content: "Someone downloaded FJAN"
+                        })
+                    })
+                  })
+              </script>
             <!--   -->
 
             
